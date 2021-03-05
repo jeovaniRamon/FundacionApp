@@ -13,4 +13,10 @@ export class SignupComponent implements OnInit {
     constructor() { }
 
     ngOnInit() {}
+
+    enviar(){
+        location.reload();
+        alert("prueba mensajes");
+
+    }
 }

@@ -1,21 +1,6 @@
 <footer class="footer" [ngClass]="{'has-cards': getPath()!=='/user-profile' && getPath()!=='/register' && getPath()!=='/login'}">
   <div class="container container-lg" *ngIf="getPath()!=='/user-profile' && getPath()!=='/register' && getPath()!=='/login'">
-    <!-- <div class="row">
-      <div class="col-md-6 mb-5 mb-md-0">
-        <div class="card card-lift--hover shadow border-0">
-          <a [routerLink]="['/landing']" title="Landing Page">
-            <img src="./assets/img/theme/landing.jpg" class="card-img">
-          </a>
-        </div>
-      </div>
-      <div class="col-md-6 mb-5 mb-lg-0">
-        <div class="card card-lift--hover shadow border-0">
-          <a [routerLink]="['/user-profile']" title="Profile Page">
-            <img src="./assets/img/theme/profile.jpg" class="card-img">
-          </a>
-        </div>
-      </div>
-    </div>-->
+    
   </div>
   <div class="container">
     <div class="row row-grid align-items-center" [ngClass]="{'my-md': getPath()!=='/user-profile' && getPath()!=='/register' && getPath()!=='/login', 'mb-5':getPath()==='/user-profile' || getPath()==='/register' || getPath()==='/login'}">
@@ -30,11 +15,9 @@
         <a target="_blank" href="https://www.facebook.com/creativetim" class="btn btn-neutral btn-icon-only btn-facebook btn-round btn-lg" ngbTooltip="Like us">
           <i class="fa fa-facebook-square"></i>
         </a>
-        <a target="_blank" href="https://dribbble.com/creativetim" class="btn btn-neutral btn-icon-only btn-dribbble btn-lg btn-round" ngbTooltip="Follow us">
-          <i class="fa fa-dribbble"></i>
-        </a>
-        <a target="_blank" href="https://github.com/creativetimofficial" class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg" ngbTooltip="Star on Github">
-          <i class="fa fa-github"></i>
+       
+        <a href="https://wa.me/9514188047?text=Me%20gustaría%20saber%20mas%20sobre%20el%20tema" class="whatsapp" target="_blank"> 
+          <i class="fa fa-whatsapp whatsapp-icon"></i>
         </a>
       </div>
     </div>
