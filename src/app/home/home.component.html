@@ -1,97 +1,177 @@
 <main>
-  <div class="position-relative">
+  <div class="position-relative ">
     <!-- Hero for FREE version -->
    
       <!-- Background circles -->
-      <header class = "masthead">
+      <header class="masthead">
 
-      <div class="container">
-        <div class="row">
-          <div class="col">
+         <!-- ======= Hero Section ======= -->
+   <section id="hero" class="d-flex flex-column ">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel carousel-fade" data-bs-ride="carousel">
 
-            <div class="row justify-content-center">
-              <div class="col-lg-20">
-                <div class="container">
-                  <div class="row">
-                <div class="card bg-person card-lift--hover col-sm mb-3 shadow ml-3" style="max-width: 40rem; color:rgba(0, 48, 102, 0.931);"> 
-                  <div class="card-body ">
-                    <h5 class="card-title">Misión</h5>
-                    <p class="card-text">Ser una fundación que impacte nuestra sociedad a través de nuestros programas, sirviendo con pasión a quienes más lo necesitan.
-                    </p>
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container">
+
+          
+           <!-- ======= contenido de Fundacion ======= -->
+          <div class="d-flex justify-content-between">
+            <div class="row">
+              <div class="col">
+    
+                <div class="row justify-content-center">
+                  <div class="col-lg-20">
+                    <div class="container">
+                      <div class="row">
+                    <div class=" animate__animated animate__fadeInDown card bg-person card-lift--hover col-sm mb-3 shadow ml-3" style="max-width: 40rem; color:rgba(0, 48, 102, 0.931);"> 
+                      <div class="card-body ">
+                        <h5 class="card-title">Misión</h5>
+                        <p class="card-text">Ser una fundación que impacte nuestra sociedad a través de nuestros programas, sirviendo con pasión a quienes más lo necesitan.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+              <div class="row">
+                    <div class="animate__animated animate__fadeInDown card bg-person card-lift--hover col-sm  mb-3 shadow ml-3 " style="max-width: 40rem;"> 
+                      <div class="card-body">
+                        <h5 class="card-title">Visión</h5>
+                        <p class="card-text">Ser una fundación que ayude a mejorar el futuro de los niños, enfocándonos en la educación creyendo que a través de ella promovemos el desarrollo de los niños generando nuevas oportunidades.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               <!--  <app-sections></app-sections> -->
+              </div>
+            </div>
+          </div>
+          <!--  Seccion de en medio -->
+            <div id = "texto" class="col-sm " style="padding-left: 9px;">
+              <div class="row align-items-center ">
+                <div class="col-lg-8 text-center card-lift--hover">
+                  <img src="./assets/img/brand/logo.png" style="width: 400px; max-width: 200%;" class="img-fluid rounded" alt="Responsive image">
+                </div>
+                
+              </div>
+              <div class="mt-5">   
+                <div class="row-cols-1 card-lift--hover mb-5" style="height: 10rem;">
+                <a role="button"   href="#heroCarousel" data-bs-slide="next" class="font-weight-bold mb-0 mr-2" style="color: #ffbf01;">¿CÓMO PUEDO AYUDAR?</a>
+              </div>
+                <div class="row-cols-1 card-lift--hover mb-3 " style="height: 10rem;">
+                <a role="button" [routerLink]="['/landing']"   data-bs-slide="next" class=" font-weight-bold mb-0 mr-2" style="color: #ffbf01;">INGRESA A NUESTRO PROGRAMA MANO A MANO </a>
+              </div>
+                <!--   <p *ngIf = "ayudar == true" class="card-text animate__animated animate__fadeInDown" >
+                  </p>-->
+              </div>
+            </div>
+            <!-- FIN Seccion de en medio -->
+            <div class="col-sm">
+    
+              <div class="row justify-content-center">
+                <div class="col-lg-20">
+                  <div class="container">
+                    <div class="row">
+                  <div class="animate__animated animate__fadeInDown card bg-person card-lift--hover col-sm mb-3 shadow ml-3" style="max-width: 40rem;"> 
+                    <div class="card-body ">
+                      <h5 class="card-title">¿Quiénes somos?</h5>
+                      <p class="card-text">Somos una organización no gubernamental, que trabaja para el beneficio de la niñez, mediante la cooperación solidaria de los ciudadanos para la realización de proyectos que permitan mejorar las condiciones de vida de la población infantil de escasos recursos, a través de programas educativos (Asesorías de nivel primaria), Artes (Música, Ballet, Pintura) y alimenticios (Comedor).</p>
+                    </div>
                   </div>
                 </div>
               </div>
-          <div class="row">
-                <div class="card bg-person card-lift--hover col-sm  mb-3 shadow ml-3 " style="max-width: 40rem;"> 
-                  <div class="card-body">
-                    <h5 class="card-title">Visión</h5>
-                    <p class="card-text">Ser una fundación que ayude a mejorar el futuro de los niños, enfocándonos en la educación creyendo que a través de ella promovemos el desarrollo de los niños generando nuevas oportunidades.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-           <!--  <app-sections></app-sections> -->
-          </div>
-        </div>
-      </div>
-        <div class="col-sm">
-          <div class="row align-items-center justify-content-center">
-            <div class="col-lg-8 text-center card-lift--hover">
-              <img src="./assets/img/brand/logo.png" style="width: 400px;" class="img-fluid rounded" alt="Responsive image">
-              
-              <p class="lead text-white">Unidos en amor y esperanza</p>
-         <!-- <div class="btn-wrapper mt-5">
-                <a href="https://www.creative-tim.com/product/argon-design-system-angular?ref=adsa-index-header" class="btn btn-lg btn-white btn-icon mb-3 mb-sm-0">
-                  <span class="btn-inner--icon"><i class="ni ni-cloud-download-95"></i></span>
-                  <span class="btn-inner--text">Download Angular</span>
-                </a>
-                <a href="https://github.com/creativetimofficial/argon-design-system-angular?ref=adsa-index-header" class="btn btn-lg btn-github btn-icon mb-3 mb-sm-0" target="_blank">
-                  <span class="btn-inner--icon"><i class="fa fa-github"></i></span>
-                  <span class="btn-inner--text">
-                    <span class="text-warning">Star us</span> on Github</span>
-                </a>
-              </div>--> 
-              <div class="mt-5">
-                <small class="text-white font-weight-bold mb-0 mr-2">fundacion vida digna y solidaria a.c.</small>
-          
-              </div>
-              
-            </div>
-            
-          </div>
-          
-        </div>
-        <div class="col-sm">
-
-          <div class="row justify-content-center">
-            <div class="col-lg-20">
-              <div class="container">
-                <div class="row">
-              <div class="card bg-person card-lift--hover col-sm mb-3 shadow ml-3" style="max-width: 40rem;"> 
-                <div class="card-body ">
-                  <h5 class="card-title">¿Quiénes somos?</h5>
-                  <p class="card-text">Somos una organización no gubernamental, que trabaja para el beneficio de la niñez, mediante la cooperación solidaria de los ciudadanos para la realización de proyectos que permitan mejorar las condiciones de vida de la población infantil de escasos recursos, a través de programas educativos (Asesorías de nivel primaria), Artes (Música, Ballet, Pintura) y alimenticios (Comedor).</p>
-                </div>
-              </div>
+             <!--  <app-sections></app-sections> -->
             </div>
           </div>
-         <!--  <app-sections></app-sections> -->
         </div>
+           
       </div>
     </div>
-       
-  </div>
-</div>
-    </header>
-      <!-- SVG separator -->
-      <div class="separator separator-bottom separator-skew zindex-100">
-        <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
-          <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
-        </svg>
+    <!-- ======= FIN contenido de Fundacion ======= -->
+    
+        </div>
       </div>
+
+      <!-- Slide 2  -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class=" animate__animated animate__fadeInDown">¿CÓMO PUEDO AYUDAR?</h2>
+          <p class=" animate__animated animate__fadeInUp"><strong>No somos una organización gubernamental, los proyectos se desarrollan en base a donaciones, es por ello que desarrollamos un sistema, en donde puedes apoyar y lograr que más niños vulnerables sean beneficiados con nuestros programas.
+            Consideramos que vivimos tiempos complicados y que es necesario que nos apoyemos mutuamente.
+            
+            La donación no es gravosa, la finalidad es realizar nuestros programas y, que además puedas ser beneficiado al formar parte de un equipo de trabajo y una red sistemática de ayuda solidaria, mejorando así tu estilo de vida.</strong></p>
+          
+        </div>
+      </div>
+
+     <!-- Slide 3  -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Artes (Música, Ballet, Pintura)</h2>
+          <p class="animate__animated animate__fadeInUp"></p>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="./assets/img/brand/niñosmusica.jpg" class="card-img-top animate__animated animate__fadeInUp" alt="...">
+
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./assets/img/brand/niñosdanza.jpg" class="card-img-top animate__animated animate__fadeInUp" alt="...">
+   
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="./assets/img/brand/niñospintura.jpg" class="card-img-top img-thumbnail animate__animated animate__fadeInUp" alt="...">
+              </div>
+            </div>
+          </div>
+          
+    </div>
+  </div>
+
+  
+   
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)"></use>
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)"></use>
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff"></use>
+      </g>
+    </svg>
+
+  </section>
+      
+   
+    </header>
+  
+
+   
+
+
+
+      <!-- SVG separator -->
+      
     
   </div>
-  
+   
   
 </main>

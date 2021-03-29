@@ -627,7 +627,7 @@ pre code {
 
 @media (min-width:1200px) {
     .container {
-        max-width: 1140px
+        max-width: 1415px
     }
 }
 
@@ -13798,7 +13798,7 @@ a.btn-icon-only {
     position: relative;
     overflow: hidden;
     margin-top: -420px;
-    padding-top: 500px;
+    padding-top: 290px;
     pointer-events: none;
     background: 0 0
 }

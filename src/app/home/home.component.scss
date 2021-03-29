@@ -3,11 +3,15 @@
     width: 100%;
     height: auto;
     min-height: 35rem;
-    padding: 8rem 0;
+    padding: 4rem 0;
     margin-left: 0rem;
-    background:  url("/assets/img/brand/masthead.png");
+   // background:  url("/assets/img/brand/masthead.png");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
   }
+
+  .claseFuente {
+    font-family:'Conv_Luimp',Sans-Serif;
+    }

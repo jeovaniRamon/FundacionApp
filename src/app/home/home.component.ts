@@ -12,10 +12,17 @@ export class HomeComponent implements OnInit {
         middle: false,
         right: false
     };
+    ayudar: boolean;
 
     focus;
     focus1;
     constructor() { }
+    mostrarTexto(){
+       this.ayudar = !this.ayudar;
+       console.log(this.ayudar);
+    }
 
-    ngOnInit() {}
+    ngOnInit() {
+        
+    }
 }
